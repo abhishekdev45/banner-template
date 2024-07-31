@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FiX } from 'react-icons/fi';
-import BannerImageComp from './BannerImageComp'; // Import the banner component for preview
+import BannerImageComp from './BannerImageComp'; 
 
 interface AdBannerProps {
   id: number;
@@ -40,11 +40,11 @@ const EditBannerTemplateBs: React.FC<EditBannerTemplateBsProps> = ({ banner, onS
   }, [banner]);
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-      <div className="relative bg-white rounded-lg shadow-lg p-6 w-full max-w-3xl">
+    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 overflow-y-auto">
+      <div className="relative bg-white rounded-lg shadow-lg p-6 w-full max-w-3xl max-h-full overflow-y-auto">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"
+          className="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
         >
           <FiX className="w-6 h-6" />
         </button>
