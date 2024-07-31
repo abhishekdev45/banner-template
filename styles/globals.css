@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* .banner-image-comp {
+  position: relative;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px 0;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-image-comp h2 {
+  margin: 10px 0;
+}
+
+.banner-image-comp p {
+  margin: 10px 0;
+}
+
+.banner-image-comp button {
+  margin-top: 10px;
+}
+
+.edit-banner-template-bs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.edit-banner-template-bs h2 {
+  margin: 0 0 10px;
+}
+
+.edit-banner-template-bs input,
+.edit-banner-template-bs textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+} */
+
+.edit-banner-template-bs button {
+  margin-top: 10px;
+}
